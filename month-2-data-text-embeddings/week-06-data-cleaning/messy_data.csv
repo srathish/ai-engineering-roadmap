@@ -1,0 +1,18 @@
+customer_id,name,city,signup_date,age,plan,monthly_spend
+1,  Alice Johnson ,New York,2023-01-15,34,premium,49.99
+2,bob smith,los angeles,2023-02-20,,BASIC,9.99
+3,CAROL WHITE,Chicago,2023-03-10,29,Premium,$49.99
+4,Dan Brown,  houston ,2023-04-05,45,basic,9.99
+5,Eve Davis,Phoenix,,38,PREMIUM,49.99
+3,CAROL WHITE,Chicago,2023-03-10,29,Premium,$49.99
+6,frank moore,New York,2023-05-22,,premium,49.99
+7, Grace Lee,los angeles,2023-06-18,27,Basic,9.99
+8,HENRY KING,chicago,2023-07-30,52,premium,49.99
+9,ivy nelson,Houston,2023-08-14,41,BASIC,9.99
+10,Jack Hall ,Phoenix,2023-09-09,,Premium,$49.99
+2,bob smith,los angeles,2023-02-20,,BASIC,9.99
+11,KAREN SCOTT,new york,2023-10-25,36,basic,9.99
+12,leo adams,Los Angeles,2023-11-11,48,Premium,49.99
+13, Mia Turner,Chicago,,31,premium,49.99
+14,NOAH WRIGHT,houston,2024-01-03,,BASIC,9.99
+15,olivia hill,Phoenix,2024-02-19,44,Premium,$49.99

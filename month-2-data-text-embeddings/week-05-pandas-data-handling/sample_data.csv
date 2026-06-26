@@ -1,0 +1,28 @@
+order_id,date,region,product,category,units,unit_price,sales_rep
+1001,2024-01-05,North,Laptop,Electronics,3,899.99,Alice
+1002,2024-01-07,South,Desk Chair,Furniture,5,149.50,Brian
+1003,2024-01-09,East,Notebook,Stationery,40,2.25,Chloe
+1004,2024-01-12,West,Monitor,Electronics,4,229.00,Alice
+1005,2024-01-15,North,Standing Desk,Furniture,2,399.00,Diana
+1006,2024-01-18,South,Pen Pack,Stationery,30,4.75,Brian
+1007,2024-01-20,East,Laptop,Electronics,2,899.99,Chloe
+1008,2024-01-22,West,Bookshelf,Furniture,3,189.00,Diana
+1009,2024-01-25,North,Monitor,Electronics,6,229.00,Alice
+1010,2024-01-28,South,Notebook,Stationery,50,2.25,Brian
+1011,2024-02-02,East,Desk Chair,Furniture,4,149.50,Chloe
+1012,2024-02-05,West,Laptop,Electronics,1,899.99,Diana
+1013,2024-02-08,North,Pen Pack,Stationery,25,4.75,Alice
+1014,2024-02-11,South,Monitor,Electronics,5,229.00,Brian
+1015,2024-02-14,East,Standing Desk,Furniture,3,399.00,Chloe
+1016,2024-02-17,West,Notebook,Stationery,60,2.25,Diana
+1017,2024-02-20,North,Bookshelf,Furniture,2,189.00,Alice
+1018,2024-02-23,South,Laptop,Electronics,4,899.99,Brian
+1019,2024-02-26,East,Pen Pack,Stationery,35,4.75,Chloe
+1020,2024-03-01,West,Monitor,Electronics,3,229.00,Diana
+1021,2024-03-04,North,Desk Chair,Furniture,6,149.50,Alice
+1022,2024-03-07,South,Standing Desk,Furniture,1,399.00,Brian
+1023,2024-03-10,East,Notebook,Stationery,45,2.25,Chloe
+1024,2024-03-13,West,Laptop,Electronics,2,899.99,Diana
+1025,2024-03-16,North,Monitor,Electronics,4,229.00,Alice
+1026,2024-03-19,South,Bookshelf,Furniture,3,189.00,Brian
+1027,2024-03-22,East,Pen Pack,Stationery,28,4.75,Chloe
