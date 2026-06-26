@@ -1,0 +1,8 @@
+# Core dependency
+numpy>=1.24
+
+# Used for the learned re-ranker; the script falls back to a heuristic if absent
+scikit-learn>=1.3
+
+# Optional: a stronger cross-encoder re-ranker. Not required to run this demo.
+# sentence-transformers>=2.2
