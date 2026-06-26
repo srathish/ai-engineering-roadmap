@@ -1,0 +1,35 @@
+{
+  "task": "Classify the sentiment of a customer support message as exactly one word: positive, negative, or neutral.",
+  "examples": [
+    {
+      "id": "ex-1",
+      "input": "Your product completely changed how my team works. Absolutely thrilled!",
+      "expected": "positive"
+    },
+    {
+      "id": "ex-2",
+      "input": "I've emailed three times and still no response. This is unacceptable.",
+      "expected": "negative"
+    },
+    {
+      "id": "ex-3",
+      "input": "Can you tell me what time your support line opens on weekdays?",
+      "expected": "neutral"
+    },
+    {
+      "id": "ex-4",
+      "input": "The onboarding was a bit confusing but support sorted it out quickly.",
+      "expected": "positive"
+    },
+    {
+      "id": "ex-5",
+      "input": "The app crashes every time I open the reports tab. Very frustrating.",
+      "expected": "negative"
+    },
+    {
+      "id": "ex-6",
+      "input": "I'd like to update the credit card on file for my account.",
+      "expected": "neutral"
+    }
+  ]
+}

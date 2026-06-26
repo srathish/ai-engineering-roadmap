@@ -1,0 +1,16 @@
+Engineering Notes
+
+Deployment: we deploy via a Docker image to our cloud provider. Every service
+exposes a /health endpoint and emits structured JSON logs. Releases are gated on
+a green CI run and a passing smoke test against staging.
+
+Observability: each request carries a request_id that flows through the logs. We
+track latency, error rate, and token usage per endpoint. Alerts fire when the
+p95 latency exceeds 2 seconds for five consecutive minutes.
+
+LLM usage: we standardized on the Anthropic API. The default model is
+claude-sonnet-4-6 for production workloads. We use prompt caching for the shared
+system prompt and keep a price table to estimate cost per request.
+
+Cost note: as a rough planning number, input tokens are billed at $3.00 per
+million and output tokens at $15.00 per million on our default model.
