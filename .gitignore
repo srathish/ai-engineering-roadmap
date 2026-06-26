@@ -8,3 +8,4 @@ venv/
 chroma_db/
 *.sqlite3
 data/*.bin
+library_data.json
