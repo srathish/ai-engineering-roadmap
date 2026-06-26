@@ -1,0 +1,27 @@
+OrbitNote Frequently Asked Questions
+
+What is OrbitNote?
+OrbitNote is a note-taking app for researchers. It links your notes into a
+graph so that related ideas surface automatically. It is a fictional product
+used here as sample data for a Q&A bot.
+
+How much does OrbitNote cost?
+OrbitNote has a free tier that allows up to 500 notes. The Pro plan is 8
+dollars per month and removes the note limit, adds full-text search, and
+enables sharing. The Team plan is 12 dollars per user per month and adds
+shared workspaces and admin controls.
+
+Does OrbitNote work offline?
+Yes. OrbitNote stores all notes locally first and syncs to the cloud when a
+connection is available. You can read and edit every note while offline; sync
+resumes automatically once you reconnect.
+
+How do I export my notes?
+You can export your entire vault as Markdown files or as a single JSON bundle
+from Settings, under Data and Export. Exports include your note links so the
+graph can be rebuilt elsewhere. There is no lock-in.
+
+Is my data private?
+Notes are encrypted in transit and at rest. On the Pro and Team plans you can
+enable end-to-end encryption, after which OrbitNote staff cannot read your
+note contents even on the server.

@@ -1,0 +1,19 @@
+Embeddings and Vector Search
+
+An embedding is a list of numbers - a vector - that represents a piece of
+text in a way that captures its meaning. Texts with similar meaning land near
+each other in this vector space, even if they share no words. "How do I reset
+my password" and "I forgot my login credentials" point in nearly the same
+direction.
+
+To compare two embeddings you measure the angle between them, not the distance.
+Cosine similarity is the standard measure: it is the dot product of the two
+vectors after they have been normalized to unit length. A score of 1 means the
+vectors point the same way, 0 means they are unrelated, and negative values
+mean they point in opposite directions.
+
+Vector search works by embedding every chunk in your corpus once, up front,
+and storing the vectors. At query time you embed the question and find the
+chunks whose vectors are closest to it. With a small corpus you can compare
+the query against every stored vector - a brute-force scan. That is exactly
+what an in-memory numpy implementation does.

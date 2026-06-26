@@ -1,0 +1,26 @@
+Retrieval-Augmented Generation Overview
+
+Retrieval-Augmented Generation, usually shortened to RAG, is a pattern for
+giving a large language model access to knowledge it was never trained on.
+Instead of expecting the model to memorize every fact, you store your
+documents in a searchable index and fetch the most relevant pieces at query
+time. Those pieces are pasted into the prompt as context, and the model
+answers using them.
+
+The pattern exists because language models have two hard limits. The first is
+the training cutoff: anything that happened after the model was trained is
+invisible to it. The second is the context window: you cannot paste an entire
+company wiki into a single prompt. RAG sidesteps both by keeping the knowledge
+external and pulling in only what each question needs.
+
+A RAG system has a handful of components. An ingestion pipeline loads raw
+documents and splits them into chunks. An embedding model turns each chunk
+into a vector. A vector store holds those vectors and supports nearest-neighbor
+search. At query time a retriever embeds the question, finds the closest
+chunks, and a generator composes the final answer with the retrieved context
+injected into the prompt.
+
+The quality of a RAG system depends heavily on retrieval. If the retriever
+returns irrelevant chunks, the model has nothing useful to work with and will
+either hallucinate or refuse. Good chunking and good embeddings are therefore
+the foundation everything else is built on.

@@ -1,0 +1,19 @@
+Running RAG in Production
+
+A prototype RAG pipeline and a production one share the same stages, but the
+production version cares about everything that can go wrong. The biggest
+difference is observability. You log the retrieval scores, the latency of each
+stage, and the token usage of every model call, so that when an answer is bad
+you can tell whether retrieval failed, reranking dropped the right chunk, or
+the model ignored its context.
+
+Latency is split across stages. Embedding the query is fast. The nearest-
+neighbor search is fast on a small corpus and gets slower as it grows.
+Generation is usually the slowest and most expensive step because it calls a
+hosted model and pays per token. Measuring each stage separately tells you
+where to spend effort optimizing.
+
+Token usage is the main cost driver. Every chunk you inject into the prompt is
+input tokens you pay for. Retrieving fewer, more relevant chunks is therefore
+both a quality and a cost decision. Logging input and output token counts on
+every call lets you track spend and catch regressions.

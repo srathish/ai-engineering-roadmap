@@ -1,0 +1,24 @@
+Notes on Chunking Strategies
+
+Chunking is the step where a document is cut into smaller pieces before
+embedding. It sounds trivial but it has an outsized effect on retrieval
+quality. Chunks that are too large dilute the embedding with unrelated
+content. Chunks that are too small lose the surrounding context that gives a
+sentence its meaning.
+
+The simplest strategy is fixed-size chunking. You slide a window of a fixed
+number of characters or tokens across the text and emit each window as a
+chunk. To stop a sentence from being cut in half at a boundary, you let
+consecutive windows overlap by a small amount. Fifty to a hundred characters
+of overlap is a common starting point.
+
+A more careful strategy is sentence or paragraph aware chunking. Here you
+respect natural boundaries: you never split in the middle of a sentence, and
+you try to keep paragraphs together. You pack whole sentences into a chunk
+until you reach a size budget, then start a new chunk. Carrying one sentence
+of overlap between chunks keeps a thread of continuity.
+
+There is no single best chunk size. It depends on the documents and the
+questions. Short factual snippets favor small chunks. Narrative or technical
+explanations favor larger ones. The honest answer is that you measure
+retrieval quality on real questions and tune from there.

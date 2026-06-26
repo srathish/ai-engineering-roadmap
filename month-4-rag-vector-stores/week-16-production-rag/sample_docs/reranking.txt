@@ -1,0 +1,19 @@
+Reranking in a RAG Pipeline
+
+Retrieval by embedding similarity is fast but blunt. The closest vectors are
+usually relevant, but not always in the best order, and a chunk can be
+semantically near a query while not actually containing the answer. Reranking
+is a second pass that re-sorts the retrieved candidates before they reach the
+model.
+
+The simplest reranker blends signals. You keep the dense embedding score and
+add a lexical signal such as keyword overlap: how many of the query's words
+actually appear in the chunk. A weighted combination of the two often beats
+either alone, because it rewards chunks that are both semantically close and
+literally on-topic.
+
+A threshold step is just as important. After reranking you drop any candidate
+whose score falls below a floor, so weak matches never reach the prompt. This
+keeps token usage down and stops irrelevant context from confusing the model.
+More advanced systems use a dedicated cross-encoder reranker model, but the
+idea is the same: retrieve broadly, then re-sort and prune before generating.

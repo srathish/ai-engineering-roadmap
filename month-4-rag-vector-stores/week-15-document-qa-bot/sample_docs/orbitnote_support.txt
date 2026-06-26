@@ -1,0 +1,28 @@
+OrbitNote Support Notes
+
+Resetting your password:
+Go to the sign-in screen and choose "Forgot password". You will receive an
+email with a reset link that is valid for thirty minutes. If the email does
+not arrive, check your spam folder and confirm you used the address tied to
+your account.
+
+Syncing problems:
+If a device is not syncing, first confirm it is online. Then open Settings,
+Sync, and tap "Force sync". If a conflict is detected, OrbitNote keeps both
+versions of the note and marks the newer one as primary so nothing is lost.
+
+Recovering a deleted note:
+Deleted notes move to Trash and stay there for thirty days before they are
+permanently removed. To recover one, open Trash from the sidebar, select the
+note, and choose Restore. After thirty days recovery is not possible.
+
+Keyboard shortcuts:
+Press Cmd-K (or Ctrl-K on Windows) to open the quick switcher and jump to any
+note by name. Press Cmd-L to insert a link to another note. Press Cmd-Shift-F
+to run a full-text search across the whole vault, which requires a Pro or Team
+plan.
+
+Contacting support:
+Pro and Team customers get priority email support with a one business day
+response target. Free tier users can use the community forum, which is
+monitored by the OrbitNote team.

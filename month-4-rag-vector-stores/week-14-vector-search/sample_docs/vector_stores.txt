@@ -1,0 +1,23 @@
+Vector Store Landscape
+
+Once your corpus grows past a few thousand chunks, comparing the query against
+every vector becomes slow. Dedicated vector stores solve this with approximate
+nearest-neighbor indexes that trade a little accuracy for a large speedup, plus
+persistence so you do not re-embed everything on every restart.
+
+Chroma is a popular choice for local development and small projects. It runs in
+process, persists to disk, and has a simple Python API, so it is an easy step
+up from an in-memory numpy array.
+
+pgvector is an extension for PostgreSQL. If you already run Postgres, it lets
+you store embeddings in a normal table column and query them with SQL. That
+keeps your vectors next to your relational data and avoids running a separate
+service.
+
+Pinecone is a fully managed, hosted vector database. You do not run any
+infrastructure; you call an API. It scales to very large corpora and handles
+the indexing for you, at the cost of being a paid external dependency.
+
+The mechanics are the same across all of them: embed, store, search by
+similarity. The differences are about scale, persistence, and how much
+infrastructure you want to operate.
